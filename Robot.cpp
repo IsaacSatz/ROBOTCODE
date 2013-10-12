@@ -27,10 +27,10 @@ void Autonomous(){
   rightVic1.Set(-0.5);
   rightVic2.Set(-0.5);
   Wait(2.0);
-  leftVic1(0.0);
-  leftVic2(0.0);
-  rightVic1(0.0);
-  rightVic2(0.0);
+  leftVic1.Set(0.0);
+  leftVic2.Set(0.0);
+  rightVic1.Set(0.0);
+  rightVic2.Set(0.0);
 }
 };
 
