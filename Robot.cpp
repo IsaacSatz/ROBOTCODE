@@ -22,16 +22,30 @@ MyRobot() :
 
 void Autonomous(){
 //the stuff we want the robot to do during autonomous mode
+  //right
   leftVic1.Set(0.5);
+  leftVic2.Set(0.5);
+  rightVic1.Set(0.0);
+  rightVic2.Set(0.0);
+  Wait(2.0);
+  //left
+  leftVic1.Set(0.0);
+  leftVic2.Set(0.0);
+  rightVic1.Set(-0.5);
+  rightVic2.Set(-0.5);
+  wait(2.0);
+  //straight
+  leftVic1.Set(0.5)
   leftVic2.Set(0.5);
   rightVic1.Set(-0.5);
   rightVic2.Set(-0.5);
-  Wait(2.0);
-  leftVic1.Set(0.0);
+  wait(4.0);
+  //stop
+  leftVic1.Set(0.0)
   leftVic2.Set(0.0);
   rightVic1.Set(0.0);
   rightVic2.Set(0.0);
-}
+  }
 };
 
 START_ROBOT_CLASS(MyRobot);
